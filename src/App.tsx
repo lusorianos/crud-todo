@@ -7,6 +7,7 @@ import Icon from './components/icon'
 import Text from './components/text'
 import Button from './components/button'
 import ButtonIcon from './components/button-icon'
+import InputText from './components/input'
 
 export default function App() {
 
@@ -32,7 +33,9 @@ export default function App() {
           </Button>
         </div>
         <div className='w-full flex items-center justify-between gap-4 p-5 rounded bg-white shadow-sm'>
-          <div></div>
+          <div className='flex-1'>
+            <InputText className='w-full' />
+          </div>
           <div className='flex items-center gap-1'>
             <ButtonIcon variant="secondary" icon={IconX}/>
             <ButtonIcon icon={IconCheck}/>
